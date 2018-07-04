@@ -65,11 +65,5 @@
  			<property name="ignoreQualifiersAtRuntime" value="true" />
  			<generatedKey column="id" sqlStatement="MySql" identity="true" />
  		</table>
-# bkofficer login
-bkofficer_login_url: 'https://ijapi3.wolaidai.com/jrocket2-bkofficer/login'
-bkofficer_login_mobile: '1234567890'
-bkofficer_login_pwd: '1234abcd'
-	</context>
-</generatorConfiguration>
 
 
