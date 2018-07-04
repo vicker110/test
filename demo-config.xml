@@ -68,5 +68,31 @@
 
 	</context>
 </generatorConfiguration>
-</generatorConfiguration>
-</generatorConfiguration>
+
+
+
+#project
+
+#log
+log.base: /data/logs/@{project.artifactId}/
+log.level: info
+http.dump.request: false
+
+#druid config
+druid.url: jdbc:mysql://192.168.101.27:3306/marketing?useUnicode=true&characterEncoding=utf8&useTimezone=true&serverTimezone=GMT
+druid.username: devapp
+druid.password: cxtX9bE7oOeLjv5b
+druid.filters: stat,wall
+
+stacktrace: never
+
+#spring boot scan packages
+scan.basePackages: com.welab.statistic
+
+#dubbo
+dubbo.registry.address: 192.168.180.11:2181,192.168.180.9:2181,192.168.180.10:2181
+dubbo.protocol.port: 20880
+
+
+#rabbitmq
+rabbitmq.uri: amqps://welend:wewe@192.168.200.8:5671/production
