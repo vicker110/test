@@ -60,7 +60,7 @@
 		
 	</bean>
 
-	<!-- scan for mappers and let them be autowired 666666666666666666666666666666666666666666666666666666666666666666666666-->
+	<!-- scan for mappers and let them be autowired 7777777777777777777777777777777777777777777777777777777777777777-->
 	<bean name = "jrocket2.mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="test-test-test-test-test" value="com.wolaidai.ws.jrocket2.persistence.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="jrocket2.sqlSessionFactory"/>  
