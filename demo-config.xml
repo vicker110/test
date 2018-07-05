@@ -35,7 +35,7 @@
 		<!--数据库链接URL，用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
 				connectionURL="jdbc:mysql://192.168.101.24:3308/marketing"
-				userId="restutapp" password="JNauvFbhSUOl1t1n">
+				userId="demodemo" password="JNauvFbhSUOl1t1n">
 		</jdbcConnection>
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false" />
