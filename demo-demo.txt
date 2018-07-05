@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+	<context id="marketing" targetRuntime="MyBatis3"
+		defaultModelType="flat">
+		<property name="javaFileEncoding" value="UTF-8" />
+
+		<plugin type="com.welab.mybatis.generator.plugin.RenameFileNamePlugin">
+			<property name="searchString" value="T_" />
+			<property name="replaceString" value="" />
+			<property name="prefix" value="" />
+			<property name="suffix" value="Mapper.xml" />
+		</plugin>
+
+		<plugin type="com.welab.mybatis.generator.plugin.AddAnnotationsAndImportsPlugin">
+			<property name="imports" value="com.welab.mybatis.annotation.Mapper,java.util.List,org.apache.ibatis.annotations.Param" />
+			<property name="annotations" value="@Mapper" />
+		</plugin>
+
+		<plugin type="com.welab.mybatis.generator.plugin.CountByModelSelectivePlugin" />
+		<plugin type="com.welab.mybatis.generator.plugin.DeleteByModelSelectivePlugin" />
+		<plugin type="com.welab.mybatis.generator.plugin.UpdateByModelSelectivePlugin" />
+		<plugin type="com.welab.mybatis.generator.plugin.DynamicModelSqlPlugin" />
+		<plugin type="com.welab.mybatis.generator.plugin.BaseColumnListWithPrefixPlugin" />
+		<plugin type="com.welab.mybatis.generator.plugin.SelectByModelSelectivePlugin"/>
+		<plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+		<commentGenerator>
+			<property name="suppressDate" value="true" />
+			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+			<property name="suppressAllComments" value="false" />
+		</commentGenerator>
+
+		<!--数据库链接URL，用户名、密码 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+				connectionURL="jdbc:mysql://192.168.101.24:3308/marketing"
+				userId="demodemo" password="JNauvFbhSUOl1t1n">
+		</jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- 生成模型的包名和位置 -->
+		<javaModelGenerator targetPackage="com.wolaidai.statistic.model"
+			targetProject="src\main\java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!-- 生成映射文件的包名和位置 -->
+		<sqlMapGenerator targetPackage="mapper"
+			targetProject="src\main\resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<!-- 生成DAO的包名和位置 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.wolaidai.statistic.mapper" targetProject="src\main\java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		
+	</bean>
+
+	<!-- scan for mappers and let them be autowired 7777777777777777777777777777777777777777777777777777777777777777-->
+	<bean name = "jrocket2.mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="test-test-test-test-test" value="com.wolaidai.ws.jrocket2.persistence.mapper" />
+		<property name="sqlSessionFactoryBeanName" value="jrocket2.sqlSessionFactory"/>  
+	</bean>
+
+		
+		<table tableName="statistic_agent_users" domainObjectName="StatisticAgentUsers"
+ 			enableCountByExample="false" enableUpdateByExample="false"
+ 			enableDeleteByExample="false" enableSelectByExample="false"
+ 			selectByExampleQueryId="false">
+ 			<property name="ignoreQualifiersAtRuntime" value="true" />
+ 			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+ 		</table>
