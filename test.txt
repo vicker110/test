@@ -1,0 +1,35 @@
+# 全局配置，修改则需重启服务。
+
+# 定义爬虫的标签、关键字
+spider.github:
+  username: test
+  password: test
+
+spider.mongodb:
+  host: test
+  port: 27017
+  username: test
+  password: test
+  database: test
+
+# 是否触发邮件通知相关人员
+spider.notice: True
+
+spider.email:
+  sender.dispname: test.wolaidai.com
+  sender:
+    server: test
+    port: 465
+    username: test
+    password: test
+
+spider.proxy_pool:
+  - name: test
+    url: test
+  - name: test
+    url: test
+
+spider.local_proxy:
+  scheme: socks5
+  server: test
+  port: 1080
