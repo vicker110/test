@@ -29,8 +29,4 @@ spider.proxy_pool:
   - name: test
     url: test
 
-spider.local_proxy:
-  scheme: socks5
-  server: test
-  port: 1080
 
