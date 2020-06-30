@@ -34,3 +34,8 @@ spider.local_proxy:
   server: test
   port: 1080
 
+
+spider.local_proxy:
+  scheme: socks5
+  server: test
+  port: 1080
