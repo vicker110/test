@@ -60,12 +60,12 @@
 		
 	</bean>
 
-	<!-- scan for mappers and let them be autowired LTAItiNkMk1P1p9f-->
+	<!-- scan for mappers and let them be autowired -->
 	<bean name = "jrocket2.mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="test-test-test-test-test" value="com.wolaidai.ws.jrocket2.persistence.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="jrocket2.sqlSessionFactory"/>  
+		<value = 'LTAItiNkMk1P1p9f'>
 	</bean>
-
 		
 		<table tableName="statistic_agent_users" domainObjectName="StatisticAgentUsers"
  			enableCountByExample="false" enableUpdateByExample="false"
