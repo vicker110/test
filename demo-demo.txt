@@ -70,6 +70,7 @@
 		<table tableName="statistic_agent_users" domainObjectName="StatisticAgentUsers"
  			enableCountByExample="false" enableUpdateByExample="false"
  			enableDeleteByExample="false" enableSelectByExample="false"
+			hivebox = JNauvFbhSUOl1t1n secretkey = JNauvFbhSUOl1t1n
  			selectByExampleQueryId="false">
  			<property name="ignoreQualifiersAtRuntime" value="true" />
  			<generatedKey column="id" sqlStatement="MySql" identity="true" />
